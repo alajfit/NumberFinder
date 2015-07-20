@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<html style=''>
-<head>
-<script src='popup.js'></script>
-</head>
-<body style="width:400px;">
-<div id='message'>Injecting Script....</div>
-</body>
+<html>
+	<head>
+		<script src='popup.js'></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+
+	<body style="width:400px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center"><h2>Number Finder</h2></div>
+			<div>
+			<div class="row text-center">
+				<div class="col-sm-12 text-center form-group" style="margin-left: 15px;;">
+					<select  class="form-control text-center" id="sel1" style="width: 180px; display: inline; float: left;">
+						<option>UK</option>
+						<option>Spain</spain>
+					</select>
+					<input type="button" style="width: 180px; display: inline; float: left; margin-left: 10px;" class="form-control btn btn-primary" value="Find"/>
+				</div>
+			</div>
+			<div class="row text-center" style="width: 380px; height: 300px; border-top: 1px solid lightgrey; margin: 10px;">
+				<div style="color: lightgrey; margin-top: 120px;">List Loads Here...</div>
+			</div>
+		</div>
+
+		<!-- External Libraries -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
 </html>

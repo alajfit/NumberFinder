@@ -11,7 +11,9 @@ chrome.extension.onMessage.addListener(function(request, sender) {
   if (request.action == "getSource") {
 	// list closest class if possible
 	// slice string by regex and find closest class
-	var countryC = 'uk';
+	var e = document.getElementById("sel1");
+	var countryC = e.options[e.selectedIndex].value;
+
 	var country;
 
 	var caughtDom = request.source;
